@@ -125,7 +125,7 @@ function VideoPlaceholder() {
       <video
         ref={videoRef}
         className="lp-video__el"
-        src={asset('videoChamada', 'assets/chamada-thiago.mp4')}
+        src={asset('videoChamada', 'assets/chamada-francisco.mp4')}
         playsInline
         preload="metadata"
         controls={playing}
@@ -137,7 +137,7 @@ function VideoPlaceholder() {
         <React.Fragment>
           <div className="lp-video__tag">
             <span className="lp-video__dur">
-              <Icon name="Clock" size={13} strokeWidth={2} /> 0:54
+              <Icon name="Clock" size={13} strokeWidth={2} /> 0:28
             </span>
           </div>
           <div className="lp-video__play">
@@ -145,7 +145,7 @@ function VideoPlaceholder() {
           </div>
           <div className="lp-video__label">
             <p className="t">Assista à apresentação</p>
-            <p className="s">O Dr. Thiago Nunes explica o problema e o POCUS na prática.</p>
+            <p className="s">O Dr. Francisco César apresenta o curso e explica o POCUS na prática.</p>
           </div>
         </React.Fragment>
       )}

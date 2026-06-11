@@ -334,8 +334,9 @@ function Inscricao() {
                   equipe pelo WhatsApp — é por lá que confirmamos sua vaga e enviamos as
                   informações de pagamento, o endereço e todas as orientações do curso.
                 </p>
-                <Button variant="accent" size="lg"
-                  iconLeft={<Icon name="MessageCircle" size={20} />}
+                <Button variant="accent" size="lg" className="lp-whatsapp-btn"
+                  iconLeft={<img className="lp-whatsapp-btn__icon"
+                    src={asset('whatsappIcon', 'assets/whatsapp.svg')} alt="" aria-hidden="true" />}
                   iconRight={<Icon name="ArrowRight" size={18} />}
                   onClick={() => window.open(waLink(), '_blank', 'noopener')}>
                   Falar com a equipe no WhatsApp
