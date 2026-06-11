@@ -109,7 +109,8 @@ function Professores() {
         'Título de Especialista em Terapia Intensiva pela AMIB/AMB',
         'Preceptor da Residência de Terapia Intensiva do Hospital Getúlio Vargas',
         'Cardiologista da linha de cuidados de IAM do Estado do Piauí',
-        'Coordenador das Unidades de Terapia Intensiva do Hospital Getúlio Vargas'
+        'Coordenador das UTIs 1/2 do Hospital Getúlio Vargas',
+        'Diarista da UTI Cardíaca do Hospital Getúlio Vargas'
       ]
     },
     {
