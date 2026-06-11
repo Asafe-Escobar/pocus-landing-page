@@ -1,0 +1,93 @@
+/* ============================================================
+   POCUS Medsafe — Color tokens
+   Source: Brandbook_POCUS.pdf · 05 | IDENTIDADE · Paleta cromática
+   Recommended proportion: 55% Branco técnico · 30% Azul POCUS
+   · 10% azuis de apoio · 5% neutros
+   ============================================================ */
+
+:root {
+  /* ---- Brand palette (named exactly as the brandbook) ---- */
+  --pocus-blue:     #0A1835; /* Azul POCUS — cor principal */
+  --deep-blue:      #13234A; /* Azul profundo — planos secundários */
+  --tech-blue:      #3F57A4; /* Azul tecnológico — ícones, grafismos, navegação */
+  --clinical-blue:  #6F86CF; /* Azul clínico — dados, diagramas, linhas */
+  --mist-blue:      #AAB8DE; /* Azul névoa — fundos leves, respiro */
+  --tech-white:     #F7F9FC; /* Branco técnico — fundo claro, legibilidade */
+
+  /* ---- Extended blue scale (derived, harmonious) ---- */
+  --blue-950: #060F22;
+  --blue-900: #0A1835; /* = pocus-blue */
+  --blue-800: #13234A; /* = deep-blue  */
+  --blue-700: #1E3470;
+  --blue-600: #2C4690;
+  --blue-500: #3F57A4; /* = tech-blue  */
+  --blue-400: #5870BC;
+  --blue-300: #6F86CF; /* = clinical-blue */
+  --blue-200: #AAB8DE; /* = mist-blue  */
+  --blue-100: #D2DAEF;
+  --blue-50:  #ECF0F9;
+
+  /* ---- Neutrals (cool grey, tuned to the blue) ---- */
+  --white:    #FFFFFF;
+  --grey-50:  #F7F9FC; /* = tech-white */
+  --grey-100: #EEF1F7;
+  --grey-200: #DFE4EE;
+  --grey-300: #C7CEDD;
+  --grey-400: #9AA3B8;
+  --grey-500: #6E768C;
+  --grey-600: #4D5468;
+  --grey-700: #353B4C;
+  --grey-800: #222736;
+  --grey-900: #141824;
+
+  /* ---- Semantic status (clinical, muted — used sparingly) ---- */
+  --success:      #2E8B6F;
+  --success-soft: #E3F1EC;
+  --warning:      #C98A2B;
+  --warning-soft: #F8EEDC;
+  --danger:       #C0463F;
+  --danger-soft:  #F7E4E2;
+  --info:         #3F57A4; /* = tech-blue */
+  --info-soft:    #ECF0F9;
+
+  /* ============================================================
+     Semantic aliases — reference these in components/UI
+     ============================================================ */
+
+  /* Surfaces */
+  --surface-page:        var(--tech-white);
+  --surface-card:        var(--white);
+  --surface-raised:      var(--white);
+  --surface-sunken:      var(--grey-100);
+  --surface-inverse:     var(--pocus-blue);
+  --surface-inverse-alt: var(--deep-blue);
+  --surface-tint:        var(--blue-50);
+  --surface-tint-strong: var(--blue-100);
+
+  /* Text */
+  --text-strong:    var(--pocus-blue);
+  --text-body:      var(--grey-800);
+  --text-muted:     var(--grey-500);
+  --text-subtle:    var(--grey-400);
+  --text-link:      var(--tech-blue);
+  --text-on-dark:        #FFFFFF;
+  --text-on-dark-muted:  var(--mist-blue);
+
+  /* Borders / lines */
+  --border-subtle:  var(--grey-200);
+  --border-default: var(--grey-300);
+  --border-strong:  var(--clinical-blue);
+  --border-inverse: rgba(255, 255, 255, 0.16);
+
+  /* Brand / interactive */
+  --brand:          var(--pocus-blue);
+  --brand-accent:   var(--tech-blue);
+  --accent:         var(--tech-blue);
+  --accent-hover:   var(--blue-600);
+  --accent-press:   var(--blue-700);
+  --focus-ring:     var(--clinical-blue);
+
+  /* Graphism (ultrasound beam/rings) ink */
+  --graphism:       var(--tech-blue);
+  --graphism-soft:  var(--mist-blue);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>POCUS — Curso de Ultrassonografia Point of Care | Medsafe</title>
+<meta name="description" content="Curso presencial teórico-prático de POCUS para médicos e acadêmicos de Medicina. 04 de julho, Teresina/PI. Turma limitada a 16 alunos." />
+
+<!-- Design System tokens & styles -->
+<link rel="stylesheet" href="_ds/pocus-medsafe-design-system-c0650db0-6d91-45d3-8b61-9789f69c09fd/tokens/fonts.css" />
+<link rel="stylesheet" href="_ds/pocus-medsafe-design-system-c0650db0-6d91-45d3-8b61-9789f69c09fd/tokens/colors.css" />
+<link rel="stylesheet" href="_ds/pocus-medsafe-design-system-c0650db0-6d91-45d3-8b61-9789f69c09fd/tokens/typography.css" />
+<link rel="stylesheet" href="_ds/pocus-medsafe-design-system-c0650db0-6d91-45d3-8b61-9789f69c09fd/tokens/spacing.css" />
+<link rel="stylesheet" href="_ds/pocus-medsafe-design-system-c0650db0-6d91-45d3-8b61-9789f69c09fd/tokens/base.css" />
+<link rel="stylesheet" href="_ds/pocus-medsafe-design-system-c0650db0-6d91-45d3-8b61-9789f69c09fd/styles.css" />
+
+<!-- Landing page styles -->
+<link rel="stylesheet" href="pocus.css" />
+
+<!-- Standalone-export resource map (inlined as blob URLs when bundled; ignored in dev) -->
+<meta name="ext-resource-dependency" content="assets/logo-pocus.png" data-resource-id="logoPocus" />
+<meta name="ext-resource-dependency" content="assets/logo-pocus-white.png" data-resource-id="logoPocusWhite" />
+<meta name="ext-resource-dependency" content="assets/grafismo-arc.png" data-resource-id="grafismoArc" />
+<meta name="ext-resource-dependency" content="assets/grafismo-beam-c.png" data-resource-id="grafismoBeamC" />
+<meta name="ext-resource-dependency" content="assets/grafismo-beam-j.png" data-resource-id="grafismoBeamJ" />
+<meta name="ext-resource-dependency" content="assets/grafismo-hook.png" data-resource-id="grafismoHook" />
+<meta name="ext-resource-dependency" content="assets/grafismo-rings.svg" data-resource-id="grafismoRings" />
+<meta name="ext-resource-dependency" content="assets/foto-docente.png" data-resource-id="fotoDocente" />
+<meta name="ext-resource-dependency" content="assets/foto-francisco.png" data-resource-id="fotoFrancisco" />
+<meta name="ext-resource-dependency" content="assets/chamada-thiago.mp4" data-resource-id="videoChamada" />
+<meta name="ext-resource-dependency" content="image-slots.state.json" data-resource-id="imageSlotState" />
+</head>
+<body class="pocus">
+<div id="root"></div>
+
+<!-- React + ReactDOM (pinned) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+
+<!-- Lucide icons (UMD) -->
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+
+<!-- POCUS Medsafe Design System bundle -->
+<script src="_ds/pocus-medsafe-design-system-c0650db0-6d91-45d3-8b61-9789f69c09fd/_ds_bundle.js"></script>
+
+<!-- Babel -->
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<!-- Image-slot web component (user-fillable placeholders) -->
+<script src="assets/image-slot.js"></script>
+
+<!-- App scripts -->
+<script type="text/babel" src="icons.jsx"></script>
+<script type="text/babel" src="sections-a.jsx"></script>
+<script type="text/babel" src="sections-b.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+
+<!-- Splash / no-JS fallback shown while the standalone bundle unpacks -->
+<template id="__bundler_thumbnail" data-bg-color="#0A1835">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0A1835" />
+    <g transform="translate(600 400)" fill="none" stroke="#6F86CF" stroke-linecap="round">
+      <circle r="250" stroke-width="2" opacity="0.5" />
+      <circle r="195" stroke-width="11" stroke-dasharray="2 16" opacity="0.7" />
+      <circle r="145" stroke-width="10" stroke-dasharray="2 17" opacity="0.6" />
+      <circle r="95" stroke-width="9" stroke-dasharray="2 15" opacity="0.5" />
+    </g>
+    <text x="600" y="418" text-anchor="middle" fill="#F7F9FC" font-family="Montserrat, system-ui, sans-serif" font-size="84" font-weight="700" letter-spacing="6">POCUS</text>
+  </svg>
+</template>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* ============================================================
+   POCUS Medsafe — Base element styles & helpers
+   Light, opt-in resets that express the brand defaults.
+   ============================================================ */
+
+.pocus-root,
+body.pocus {
+  background: var(--surface-page);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings default to display family + strong navy */
+.pocus h1, .pocus h2, .pocus h3, .pocus h4 {
+  font-family: var(--font-display);
+  color: var(--text-strong);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-snug);
+  text-wrap: balance;
+}
+
+/* Eyebrow / overline label */
+.pocus-eyebrow {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-2xs);
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Comfortable measure for reading text */
+.pocus-prose { max-width: 64ch; }
+.pocus-prose p { margin: 0 0 var(--space-4); text-wrap: pretty; }
+
+a.pocus-link {
+  color: var(--text-link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-base) var(--ease-standard);
+}
+a.pocus-link:hover { border-bottom-color: currentColor; }
+
+/* Focus visibility */
+.pocus :focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

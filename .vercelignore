@@ -1,0 +1,9 @@
+# Artefatos de desenvolvimento — não publicar na Vercel
+screenshots/
+uploads/
+screens/
+scraps/
+.thumbnail
+.image-slots.state.json
+POCUS Landing Page (offline).html
+POCUS Landing Page v1.html
